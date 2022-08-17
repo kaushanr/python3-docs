@@ -1,3 +1,5 @@
+
+'''
 def install_pyfiglet():
   if __name__ == '__main__':
     !pip install pyfiglet
@@ -5,6 +7,8 @@ def install_pyfiglet():
 def install_termcolor():
   if __name__ == '__main__':
     !pip install termcolor
+    
+    '''
 
 def heading(text,my_color=False):
   if __name__ == '__main__':
