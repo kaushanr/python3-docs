@@ -1,12 +1,8 @@
-'''
 def install_pyfiglet():
-  if __name__ == '__main__':
-    !pip install pyfiglet
+  !pip install pyfiglet
+  
 def install_termcolor():
-  if __name__ == '__main__':
-    !pip install termcolor
-    
-    '''
+  !pip install termcolor
 
 def heading(text,my_color=False):
   if __name__ == '__main__':
@@ -26,5 +22,8 @@ def heading(text,my_color=False):
     colored_text = termcolor.colored(rendered,color)
     return  print(colored_text)
 
-
+if __name__ == '__main__':
+  install_pyfiglet()
+  install_termcolor()
+  heading()
 
