@@ -6,7 +6,6 @@ def install(package):
     subprocess.check_call([sys.executable, "!pip", "install", package])
 '''
 def heading(text,my_color=False):
-  if __name__ == '__main__':
     import pyfiglet
     import termcolor
     from random import choice
@@ -24,5 +23,5 @@ def heading(text,my_color=False):
     return  colored_text
 
 if __name__ == '__main__':
-  heading()
+    heading()
 
