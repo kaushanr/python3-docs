@@ -1,9 +1,10 @@
+'''
 import subprocess
 import sys
 
 def install(package):
     subprocess.check_call([sys.executable, "!pip", "install", package])
-
+'''
 def heading(text,my_color=False):
   if __name__ == '__main__':
     import pyfiglet
@@ -20,9 +21,8 @@ def heading(text,my_color=False):
       color = my_color
     rendered = pyfiglet.figlet_format(text, font='standard')
     colored_text = termcolor.colored(rendered,color)
-    return  print(colored_text)
+    return  colored_text
 
 if __name__ == '__main__':
-  install()
   heading()
 
