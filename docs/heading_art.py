@@ -12,10 +12,14 @@ def heading(text,my_color=None):
     import termcolor
     from random import choice
     try:
-      type(color)
-    if my_color == None:
-      color = choice(('red','green','yellow','blue','magenta','cyan','white')) 
-    elif my_color not in ('red','green','yellow','blue','magenta','cyan','white'):
+      if type(color) == int:
+        raise TypeError
+    except TypeError:
+      print('Please enter a valid color!')
+    else:
+      if my_color == None:
+        color = choice(('red','green','yellow','blue','magenta','cyan','white')) 
+      elif my_color not in ('red','green','yellow','blue','magenta','cyan','white'):
       
     color = my_color
     rendered = pyfiglet.figlet_format(text, font='standard')
