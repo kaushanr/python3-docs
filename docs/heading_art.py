@@ -23,7 +23,7 @@ def heading(text,my_color=False):
     color = my_color
   rendered = pyfiglet.figlet_format(text, font='standard')
   colored_text = termcolor.colored(rendered,color)
-  print(colored_text)
+  return  print(colored_text)
 
 if __name__ == '__main__':
   heading()
