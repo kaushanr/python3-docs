@@ -20,7 +20,7 @@ def heading(text,my_color=None):
       if my_color == None:
         color = choice(('red','green','yellow','blue','magenta','cyan','white')) 
       elif my_color not in ('red','green','yellow','blue','magenta','cyan','white'):
-      
+        raise ValueError
     color = my_color
     rendered = pyfiglet.figlet_format(text, font='standard')
     colored_text = termcolor.colored(rendered,color)
