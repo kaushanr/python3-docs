@@ -9,9 +9,13 @@ r = requests.get(url)
 with open('/content/heading_art.py', 'w') as f:
     f.write(r.text)
 
-
 from heading_art import heading
-print(heading('DAD JOKE 5000'))
+
+try: # contains error handling for pyfiglet installation
+    print(heading('DAD JOKE 5000'))
+except ModuleNotFoundError:
+    return print('Please install \'pyfiglet\' module to continue - >!pip install pyfiglet<')
+
 category = input('Let me tell you a joke! Give me a topic : ')
 print()
 print('Disclaimer** Severe Cringe Alert!','\n')
