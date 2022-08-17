@@ -1,8 +1,8 @@
-def install_pyfiglet():
-  !pip install pyfiglet
-  
-def install_termcolor():
-  !pip install termcolor
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "!pip", "install", package])
 
 def heading(text,my_color=False):
   if __name__ == '__main__':
@@ -23,7 +23,6 @@ def heading(text,my_color=False):
     return  print(colored_text)
 
 if __name__ == '__main__':
-  install_pyfiglet()
-  install_termcolor()
+  install()
   heading()
 
