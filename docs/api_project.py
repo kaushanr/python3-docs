@@ -6,7 +6,7 @@ import requests
 
 url = 'https://raw.githubusercontent.com/kaushanr/python3-docs/main/docs/heading_art.py'
 r = requests.get(url)
-with open('/content/heading_art.py', 'w') as f:
+with open('heading_art.py', 'w') as f:
     f.write(r.text)
 
 from heading_art import heading
