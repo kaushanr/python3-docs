@@ -22,5 +22,4 @@ class Robot:
 		return "Insufficient battery. Please charge and try again"
 
 		
-if __name__ == '__main__': # executes only if called function is main function, otherwise stays dormant on import
-    Robot()
+
