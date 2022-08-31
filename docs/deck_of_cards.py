@@ -16,7 +16,6 @@ class Deck:
                   for suit in ('Hearts','Diamonds','Clubs','Spades')
                   ]
     self.deck_size = len(self.cards)
-    self.cards
 
   def __repr__(self):
     return f'Deck of {self.deck_size} cards'
