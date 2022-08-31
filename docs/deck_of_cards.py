@@ -41,7 +41,7 @@ class Deck:
     return self.cards
 
   def deal_card(self):
-    return print(self._deal(1))
+    return self._deal(1)
 
   def deal_hand(self,num):
-    return print(self._deal(num))
+    return self._deal(num)
