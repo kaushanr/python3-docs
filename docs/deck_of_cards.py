@@ -22,7 +22,7 @@ class Deck:
     return f'Deck of {self.deck_size} cards'
 
   def count(self):
-    return print(len(self.cards))
+    return len(self.cards)
 
   def _deal(self,number):
     if not len(self.cards):
@@ -38,7 +38,7 @@ class Deck:
     if len(self.cards) < 52:
       raise ValueError('Only full decks can be shuffled')
     shfl(self.cards)
-    print(self.cards)
+    return self.cards
 
   def deal_card(self):
     return print(self._deal(1))
