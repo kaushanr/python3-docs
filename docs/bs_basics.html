@@ -1,5 +1,3 @@
-from bs4 import BeautifulSoup
-html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +17,6 @@ html = """
   <div data-example="yes">bye</div>
 </body>
 </html>
-"""
 
-soup = BeautifulSoup(html, "html.parser")
-d = soup.select("[data-example]")
-print(d)
+
+
